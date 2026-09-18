@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admissions — GHSS Jalsai Swabi</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/jpeg" href="images/principal.jpg">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="logo-area">
+            <div class="school-icon"><i class="fas fa-school"></i></div>
+            <div class="school-name">
+                <h1>Govt. Higher Secondary School</h1>
+                <p>Jalsai, Swabi, Khyber Pakhtunkhwa — 23580</p>
+            </div>
+        </div>
+        <div class="top-contact"><i class="fas fa-phone-alt"></i> <a href="tel:03149877414">0314 9877414</a></div>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html" class="active">Admissions</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Admissions</h1>
+        <p>Join GHSS Jalsai Swabi — Class 9 &amp; Class 11</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;›&nbsp; Admissions</div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Admission Process</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <i class="fas fa-1"></i>
+                <h3>Step 1: Registration</h3>
+                <p>Visit the school office or submit the online inquiry form below. Provide basic student information and previous school details.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-2"></i>
+                <h3>Step 2: Merit / Interview</h3>
+                <p>Admission to Class 9 is based on the Class 8 result. Admission to Class 11 is based on Matric (Class 10) result as per merit.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-3"></i>
+                <h3>Step 3: Document Submission</h3>
+                <p>Submit all required documents to the school office. Verify information and complete the admission form.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-4"></i>
+                <h3>Step 4: Confirmation</h3>
+                <p>Receive confirmation from the office. Government schools charge minimal/nominal fees as per KP Government policy.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background:#fff;">
+    <div class="container">
+        <h2 class="section-title">Required Documents</h2>
+        <table class="info-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Document</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Student's Form-B (NADRA)</td><td>Original + photocopy</td></tr>
+                <tr><td>2</td><td>Father / Guardian's CNIC</td><td>Photocopy (both sides)</td></tr>
+                <tr><td>3</td><td>Passport-sized Photographs</td><td>4 recent photos</td></tr>
+                <tr><td>4</td><td>Previous School Certificate</td><td>Class 8 DMC / Matric DMC (original)</td></tr>
+                <tr><td>5</td><td>School Leaving Certificate</td><td>Required for transfer cases</td></tr>
+                <tr><td>6</td><td>Domicile Certificate</td><td>Photocopy (if available)</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title text-center" style="display:block; text-align:center;">Online Admission Inquiry</h2>
+        <p style="text-align:center; color:#4a5a6a; margin-bottom:30px; max-width:620px; margin-left:auto; margin-right:auto;">
+            Fill this form and the school office will contact you. For urgent matters, call <strong>0314 9877414</strong>.
+        </p>
+
+        <form class="form-card" onsubmit="return handleInquiryForm(event)">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Student's Full Name *</label>
+                    <input type="text" name="student_name" required placeholder="e.g. Ahmad Ali">
+                </div>
+                <div class="form-group">
+                    <label>Date of Birth *</label>
+                    <input type="date" name="dob" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Applying for Class *</label>
+                    <select name="applying_for_class" required>
+                        <option value="">-- Select --</option>
+                        <option value="9">Class 9</option>
+                        <option value="11">Class 11</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Group Preference</label>
+                    <select name="group_preference">
+                        <option value="">-- Select --</option>
+                        <option value="Science">Science (Pre-Medical / Pre-Engineering)</option>
+                        <option value="Arts">Arts / Humanities</option>
+                        <option value="Commerce">Commerce (ICom)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Father's Name *</label>
+                    <input type="text" name="father_name" required placeholder="e.g. Muhammad Ali">
+                </div>
+                <div class="form-group">
+                    <label>Father's CNIC</label>
+                    <input type="text" name="father_cnic" placeholder="xxxxx-xxxxxxx-x">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Phone Number *</label>
+                    <input type="tel" name="phone_number" required placeholder="03xx xxxxxxx" pattern="[0-9+\-\s]{10,15}">
+                </div>
+                <div class="form-group">
+                    <label>Previous School</label>
+                    <input type="text" name="previous_school" placeholder="Name of last school attended">
+                </div>
+            </div>
+
+            <div class="form-group full" style="margin-bottom:18px;">
+                <label>Home Address *</label>
+                <textarea name="home_address" required placeholder="Village / Mohallah, Tehsil, District"></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width:100%; padding:14px;">
+                <i class="fas fa-paper-plane"></i> Submit Inquiry
+            </button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>GHSS Jalsai Swabi</h4>
+                <p>Government Higher Secondary School, Jalsai, Swabi — committed to academic excellence and character building.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Jalsai, Swabi, KP — 23580</li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:03149877414">0314 9877414</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2025 Government Higher Secondary School Jalsai Swabi.</div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
